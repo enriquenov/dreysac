@@ -30,18 +30,19 @@ body {
 .jumbo {
   font-family: "SourceSansPro-Regular";
   font-size: 2.8em;
-  line-height: 1.5em;
+  line-height: 1.3em;
 }
 
 .subtitles {
   color: #008ed6;
   font-family: "SourceSansPro-Regular";
   font-size: 15px;
+  margin-top: 30px;
   text-transform: uppercase;
 }
 
 .btn-action {
-  background-color: #008ed6;
+  background-color: #008ED6;
   margin-right: 10px;
 }
 
@@ -58,35 +59,103 @@ button.btn {
   height: 50px;
 }
 
- /* SECTIONS */
+/* SECTIONS */
 
- #header {
-   background-color: #0f2644;
-   color: #FFF;
-   padding-bottom: 100px;
- }
+#navbar {
+ background-color: #0f2644;
+ color: #FFF;
+ padding-top: 35px;
+ padding-bottom: 30px;
+}
 
- #header .top {
-   margin-top: 30px;
- }
+#navbar .navbar {
+  padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #FFF;
+  margin: 0 0 0 15px;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #FFF;
+  border-bottom: 2px solid #008ED6;
+}
 
- #header .logo {
-   display: inline-block;
-   font-family: "SourceSansPro-Bold";
-   font-size: 3em;
-   width: 80px;
-   height: auto;
- }
+#navbar .logo {
+ display: inline-block;
+ font-family: "SourceSansPro-Bold";
+ font-size: 3em;
+ width: 180px;
+ height: auto;
+}
 
- #header .nav-item a {
-   color: #FFF;
- }
+#header {
+ background-color: #0f2644;
+ color: #FFF;
+ padding-bottom: 100px;
+}
 
- #header h2 {
-   font-size: 1.6em;
- }
+#header .top {
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
 
- #header .menu {
-   display: inline-block;
-   float: right;
- }
+#header .logo {
+ display: inline-block;
+ font-family: "SourceSansPro-Bold";
+ font-size: 3em;
+ width: 180px;
+ height: auto;
+}
+
+#header .nav-item a {
+ color: #FFF;
+}
+
+#header h2 {
+ font-size: 1.6em;
+}
+
+#header .menu {
+ display: inline-block;
+ float: right;
+}
+
+#header .contact-form-container {
+  padding: 25px;
+  background-color: #FFF;
+  color: #1A1A1A;
+  width: 377px;
+  border-radius: 2px;
+}
+
+#header .contact-form-container h5 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+#header .contact-form-container p {
+  color: #999;
+  margin-bottom: 2em;
+}
+
+
+#contactForm .form-control {
+  font-size: 0.8em;
+  padding: .75em 1em;
+}
+
+.message-error {
+    background: #ffabab;
+    color: #a94442;
+    padding: 5px 20px;
+    font-weight: 700;
+    display: none;
+}
+
+.message-success {
+    background: #86f5a8;
+    color: #238441;
+    padding: 5px 20px;
+    font-weight: 700;
+    display: none;
+}
