@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url('fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url('fonts/SourceSansPro-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
+}
+
+/* HELPERS */
+
+.darkgrey {
+  color: #808185;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.jumbo {
+  font-family: "SourceSansPro-Regular";
+  font-size: 2.8em;
+  line-height: 1.5em;
+}
+
+.subtitles {
+  color: #008ed6;
+  font-family: "SourceSansPro-Regular";
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.btn-action {
+  background-color: #008ed6;
+  margin-right: 10px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border-color: rgba(216, 216, 216, 50%);
+}
+
+button.btn {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 14px;
+  width: 165px;
+  height: 50px;
+}
+
+ /* SECTIONS */
+
+ #header {
+   background-color: #0f2644;
+   color: #FFF;
+   padding-bottom: 100px;
+ }
+
+ #header .top {
+   margin-top: 30px;
+ }
+
+ #header .logo {
+   display: inline-block;
+   font-family: "SourceSansPro-Bold";
+   font-size: 3em;
+   width: 80px;
+   height: auto;
+ }
+
+ #header .nav-item a {
+   color: #FFF;
+ }
+
+ #header h2 {
+   font-size: 1.6em;
+ }
+
+ #header .menu {
+   display: inline-block;
+   float: right;
+ }
