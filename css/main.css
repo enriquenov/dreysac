@@ -126,6 +126,7 @@ button.btn {
   color: #1A1A1A;
   width: 377px;
   border-radius: 2px;
+  margin: auto;
 }
 
 #header .contact-form-container h5 {
