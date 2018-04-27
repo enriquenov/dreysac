@@ -23,6 +23,15 @@ p {
   margin-bottom: 1em;
 }
 
+h6 {
+  font-size: 18px;
+}
+
+hr {
+  border-top: 1px solid rgb(153,153,153);
+  border-top: 1px solid rgba(153,153,153,30%);
+}
+
 /* HELPERS */
 
 p.dashes {
@@ -39,7 +48,7 @@ h3.titles {
 }
 
 .darkgrey {
-  color: #808185;
+  color: #999;
 }
 
 .jumbo {
@@ -205,11 +214,13 @@ button.btn {
 
 /* CONTENT */
 #content .dreysac, #content .products, #content .team, #content .usage {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
-#content .products .product {}
+#content .dreysac {
+  padding-top: 50px;
+}
 
 #content .staff {
   text-align: center;
@@ -220,9 +231,86 @@ button.btn {
 }
 
 #content p.staff-name {
+  margin-bottom: 0;
   text-transform: uppercase;
+}
+
+#content .staff p {
+  font-size: 13px;
+  letter-spacing: 0.05em;
 }
 
 #content .usage {
   text-align: center;
+}
+
+#content .products .product {
+  padding: 50px 0;
+}
+
+#content .products .product img {
+  margin: 50px auto 0;
+}
+
+/* CAROUSEL */
+
+#carouselExampleControls {
+  box-shadow: 0 3px 22px -7px #777;
+}
+
+#carouselExampleControls .carousel-item {
+  margin: 0 auto;
+  border: 1px solid #999;
+  border: 1px solid rgba(153,153,153,30%);
+  border-radius: 1px;
+}
+
+.carousel-item .container {
+  width: 95%;
+}
+
+.carousel-item .comment {
+  font-size: 90%;
+}
+
+.carousel-item p.subtitles {
+  margin-top: 20px;
+}
+
+.carousel-item .comment h3.titles {
+  font-size: 24px;
+  line-height: 1em;
+}
+
+.carousel-item .comment p.darkgrey {
+  font-style: italic;
+  padding-top: 20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev {
+  transform: translateX(-120px);
+}
+
+.carousel-control-next {
+  transform: translateX(120px);
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  color: #999;
+  background-color: #FFF;
+  border: 1px solid #999;
+  border-radius: 50%;
+  padding: 18px 19px;
+  transform: translateX(-17px) translateY(-17px);
+}
+
+.fa-arrow-left:hover,
+.fa-arrow-right:hover {
+  background-color: #008ed6;
+  color: #FFF;
 }
