@@ -50,6 +50,13 @@ h3.titles {
 .darkgrey {
   color: #999;
 }
+.white {
+  color: #FFF;
+  color: rgba(255,255,255,80%);
+}
+.italics {
+  font-style: italic;
+}
 
 .jumbo {
   font-family: "SourceSansPro-Regular";
@@ -86,6 +93,10 @@ button.btn {
   height: 50px;
   letter-spacing: 0.05em;
   margin-top: 10px;
+}
+
+button:focus {
+  outline: none;
 }
 
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -244,6 +255,10 @@ button.btn {
   text-align: center;
 }
 
+#content .products {
+  margin-bottom: 0;
+}
+
 #content .products .product {
   padding: 50px 0;
 }
@@ -256,10 +271,13 @@ button.btn {
 
 #carouselExampleControls {
   box-shadow: 0 3px 22px -7px #777;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(60px);
 }
 
 #carouselExampleControls .carousel-item {
   margin: 0 auto;
+  background-color: #FFF;
   border: 1px solid #999;
   border: 1px solid rgba(153,153,153,30%);
   border-radius: 1px;
@@ -283,7 +301,6 @@ button.btn {
 }
 
 .carousel-item .comment p.darkgrey {
-  font-style: italic;
   padding-top: 20px;
 }
 
@@ -292,19 +309,21 @@ button.btn {
 }
 
 .carousel-control-prev {
-  transform: translateX(-120px);
+  transform: translateX(-100px);
 }
 
 .carousel-control-next {
-  transform: translateX(120px);
+  transform: translateX(100px);
 }
 
 .fa-arrow-left,
 .fa-arrow-right {
   color: #999;
   background-color: #FFF;
-  border: 1px solid #999;
+  /*border: 1px solid #999;*/
   border-radius: 50%;
+  box-shadow: 0 3px 22px -7px #777;
+  box-shadow: 0 1px 18px rgba(0, 0, 0, 0.30);
   padding: 18px 19px;
   transform: translateX(-17px) translateY(-17px);
 }
@@ -313,4 +332,61 @@ button.btn {
 .fa-arrow-right:hover {
   background-color: #008ed6;
   color: #FFF;
+}
+
+/* CLIENTES */
+
+#clients {
+  padding: 150px 0 120px;
+  background-color: #05447d;
+}
+
+#clients h3.titles, #clients p.description {
+  letter-spacing: 0.03em;
+}
+
+#clients p.description {
+  color: rgba(255,255,255,80%);
+  font-size: 14.4px;
+}
+
+#clients img {
+  margin-bottom: 20px;
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+  background-color: #000;
+  padding: 60px 0;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 50px;
+}
+
+#testimonials .no-js .owl-carousel, .owl-carousel.owl-loaded {
+  margin-top: 50px;
+}
+
+#testimonials p.white.italics {
+  font-size: 1.2em;
+}
+
+#testimonials .avatar {
+  padding: 0;
+}
+
+#testimonials .avatar-info {
+  padding: 5px 0;
+}
+
+#testimonials .avatar-info p {
+  margin-bottom: 0;
+}
+
+#testimonials .avatar img {
+  border-radius: 50%;
+  width: 60px;
+  height: auto;
 }
