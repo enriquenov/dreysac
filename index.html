@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Font Awesome Link  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/59f6dffb09.js"></script>
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -91,22 +92,22 @@
               <!-- Contact Form -->
               <form id="contactForm" class="contact-form" method="post" action="contact-form.php" data-toggle="validator">
                   <div class="row">
-                      <div class="col-md-12 form-group wow fadeInUp" data-wow-delay="0.2s">
-                          <input id="name" class="form-control" type="text" name="name" placeholder="NAME *" data-error="Name is required." required>
-                          <div class="help-block with-errors"></div>
+                      <div class="col-md-12 form-group">
+                          <input id="name" class="form-control" type="text" name="name" placeholder="NAME *" required>
+                          <!-- <div class="help-block with-errors"></div> -->
                       </div>
-                      <div class="col-md-12 form-group wow fadeInUp" data-wow-delay="0.3s">
-                          <input id="email" class="form-control" type="email" name="email" placeholder="EMAIL *" data-error="Email is required." required>
-                          <div class="help-block with-errors"></div>
+                      <div class="col-md-12 form-group">
+                          <input id="email" class="form-control" type="email" name="email" placeholder="EMAIL *" required>
+                          <!-- <div class="help-block with-errors"></div> -->
                       </div>
-                      <div class="col-md-12 form-group wow fadeInUp" data-wow-delay="0.4s">
+                      <div class="col-md-12 form-group">
                           <input id="subject" class="form-control" type="text" name="subject" placeholder="SUBJECT *">
                       </div>
-                      <div class="col-md-12 form-group wow fadeInUp" data-wow-delay="0.5s">
-                          <textarea id="message" class="form-control" placeholder="MESSAGE *" rows="3" data-error="Message is required." required></textarea>
-                          <div class="help-block with-errors"></div>
+                      <div class="col-md-12 form-group">
+                          <textarea id="message" class="form-control" placeholder="MESSAGE *" rows="3" required></textarea>
+                          <!-- <div class="help-block with-errors"></div> -->
                       </div>
-                      <div class="col-md-12 wow fadeInUp" data-wow-delay="0.6s">
+                      <div class="col-md-12">
                           <button class="btn btn-action" type="submit">Enviar Mensaje</button>
                       </div>
                   </div>
@@ -323,7 +324,7 @@
             <p class="subtitles">NUESTROS CLIENTES</p>
             <h3 class="titles white">Encuéntranos</h3>
             <p class="dashes">__</p>
-            <p class="description">Trabajamos de la mano con las mejores Laboratorios, cadenas de Farmacias y Boticas del país para brindar un producto de calidad siguiendo y cuidando rigurosos procesos de almacenamiento y distribución.</p>
+            <p class="description">Trabajamos de la mano con los mejores Laboratorios, cadenas de Farmacias y Boticas del país para brindar un producto de calidad siguiendo y cuidando rigurosos procesos de almacenamiento y distribución.</p>
           </div>
           <div class="offset-md-1 col-md-5">
             <div class="container">
@@ -361,7 +362,7 @@
             <h3 class="titles white">Testimonios</h3>
             <p class="dashes">__</p>
           </div>
-          <div class="owl-carousel owl-theme col-md-12">
+          <div class="owl-carousel owl-theme owl-one col-md-12">
 
             <div class="item">
               <p class="white italics">Sus principios activos con el canfeno, borneol, cineol y pineno entre otros. Sirve para tratar la colesisticis, colelitisis (formación de cálculos en la vesícula biliar), espasmos biliares y transtornos heptobiliares.</p>
@@ -447,15 +448,180 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-md-12">
+            <p class="subtitles">ARTÍCULOS</p>
+            <h3 class="titles">Descubre nuestro Blog</h3>
+            <p class="dashes">__</p>
+            <button type="button" class="btn btn-action visit">VISITAR BLOG</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="owl-carousel owl-theme owl-two col-md-12">
+
+            <div class="item">
+              <h6>Mefac para combatir la artritis</h6>
+              <p class="date darkgrey">on Mar 21, 2017 9:58 AM</p>
+              <div class="longdash"> </div>
+              <p class="darkgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <div class="container-fluid">
+                <div class="row data">
+                  <div class="col-md-8">
+                    <i class="fa fa-comment-o darkgrey" aria-hidden="true"></i>
+                    <p class="comments darkgrey">24 comments</p>
+                  </div>
+                  <div class="offset-md-2 col-md-2">
+                    <img src="http://via.placeholder.com/40x40" alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <h6>Mefac para combatir la artritis</h6>
+              <p class="date darkgrey">on Mar 21, 2017 9:58 AM</p>
+              <div class="longdash"> </div>
+              <p class="darkgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <div class="container-fluid">
+                <div class="row data">
+                  <div class="col-md-8">
+                    <i class="fa fa-comment-o darkgrey" aria-hidden="true"></i>
+                    <p class="comments darkgrey">24 comments</p>
+                  </div>
+                  <div class="offset-md-2 col-md-2">
+                    <img src="http://via.placeholder.com/40x40" alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <h6>Mefac para combatir la artritis</h6>
+              <p class="date darkgrey">on Mar 21, 2017 9:58 AM</p>
+              <div class="longdash"> </div>
+              <p class="darkgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <div class="container-fluid">
+                <div class="row data">
+                  <div class="col-md-8">
+                    <i class="fa fa-comment-o darkgrey" aria-hidden="true"></i>
+                    <p class="comments darkgrey">24 comments</p>
+                  </div>
+                  <div class="offset-md-2 col-md-2">
+                    <img src="http://via.placeholder.com/40x40" alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <h6>Mefac para combatir la artritis</h6>
+              <p class="date darkgrey">on Mar 21, 2017 9:58 AM</p>
+              <div class="longdash"> </div>
+              <p class="darkgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <div class="container-fluid">
+                <div class="row data">
+                  <div class="col-md-8">
+                    <i class="fa fa-comment-o darkgrey" aria-hidden="true"></i>
+                    <p class="comments darkgrey">24 comments</p>
+                  </div>
+                  <div class="offset-md-2 col-md-2">
+                    <img src="http://via.placeholder.com/40x40" alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <h6>Mefac para combatir la artritis</h6>
+              <p class="date darkgrey">on Mar 21, 2017 9:58 AM</p>
+              <div class="longdash"> </div>
+              <p class="darkgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <div class="container-fluid">
+                <div class="row data">
+                  <div class="col-md-8">
+                    <i class="fa fa-comment-o darkgrey" aria-hidden="true"></i>
+                    <p class="comments darkgrey">24 comments</p>
+                  </div>
+                  <div class="offset-md-2 col-md-2">
+                    <img src="http://via.placeholder.com/40x40" alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <h6>Mefac para combatir la artritis</h6>
+              <p class="date darkgrey">on Mar 21, 2017 9:58 AM</p>
+              <div class="longdash"> </div>
+              <p class="darkgrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <div class="container-fluid">
+                <div class="row data">
+                  <div class="col-md-8">
+                    <i class="fa fa-comment-o darkgrey" aria-hidden="true"></i>
+                    <p class="comments darkgrey">24 comments</p>
+                  </div>
+                  <div class="offset-md-2 col-md-2">
+                    <img src="http://via.placeholder.com/40x40" alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
 
           </div>
         </div>
       </div>
     </div>
 
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center contact-us">
+            <p class="subtitles">MANTENTE EN CONTACTO</p>
+            <h3 class="titles">Contáctanos</h3>
+            <p class="dashes">__</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fas fa-mobile-alt"></i>
+            <p class="darkgrey">Teléfono: (51) 01 628-7035<br>FRPM / Whatsapp: (51) 01 998-321- 228</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="darkgrey">Calle Miguel Seminario #220<br>Segundo piso<br>San Isidro</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="far fa-envelope"></i>
+            <p class="darkgrey">support@yourname.com</p>
+          </div>
+          <div class="col-md-8 offset-md-2">
 
+            <!-- Contact Form 2 -->
+            <form id="contactForm2" class="contact-form2" method="post" action="contact-form2.php" data-toggle="validator">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input id="name2" class="form-control" type="text" name="name" placeholder="NAME *" required>
+                        <input id="email2" class="form-control" type="email" name="email" placeholder="EMAIL *" required>
+                        <input id="subject2" class="form-control" type="text" name="subject" placeholder="SUBJECT *">
+                    </div>
 
+                    <div class="col-md-6 form-group">
+                        <textarea id="message2" class="form-control" placeholder="MESSAGE *" rows="6" required></textarea>
 
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-action" type="submit">Enviar Mensaje</button>
+                    </div>
+                </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
 

@@ -36,7 +36,7 @@
 		/*=========================================================================
 	        Owl Carousel Init
 	    =========================================================================*/
-		$(".owl-carousel").owlCarousel({
+		$(".owl-one").owlCarousel({
 			autoplay: true,
 			loop: true,
 			margin: 50,
@@ -49,6 +49,23 @@
 				}
 			}
 		});
+
+		$(".owl-two").owlCarousel({
+			loop: true,
+			margin: 50,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 2
+				}
+			},
+			stagePadding: 200
+		})
 
 
 }(jQuery));

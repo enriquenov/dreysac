@@ -42,9 +42,16 @@ p.dashes {
   margin-bottom: 0.1em;
 }
 
+div.longdash {
+  border-bottom: 1px solid #6e45e2;
+  width: 80px;
+  margin-bottom: 10px;
+}
+
 h3.titles {
   font-weight: bold;
-  line-height: 0.5em
+  line-height: 0.5em;
+  letter-spacing: 0.03em;
 }
 
 .darkgrey {
@@ -97,6 +104,10 @@ button.btn {
 
 button:focus {
   outline: none;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 100;
 }
 
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -224,7 +235,7 @@ button:focus {
 }
 
 /* CONTENT */
-#content .dreysac, #content .products, #content .team, #content .usage {
+#content .dreysac, #content .products, #content .team, #content .usage, #blog {
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -361,12 +372,16 @@ button:focus {
   padding: 60px 0;
 }
 
+#testimonials .owl-carousel.owl-drag .owl-item {
+  margin-top: 50px;
+}
+
 .owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 50px;
 }
 
-#testimonials .no-js .owl-carousel, .owl-carousel.owl-loaded {
-  margin-top: 50px;
+#testimonials h3 {
+  letter-spacing: 0.03em;
 }
 
 #testimonials p.white.italics {
@@ -389,4 +404,94 @@ button:focus {
   border-radius: 50%;
   width: 60px;
   height: auto;
+}
+
+/* BLOG SECTION  */
+
+#blog {
+  background-color: #FFF;
+  margin: 100px auto;
+}
+
+#blog button.visit {
+  transform: translateX(280%) translateY(-200%);
+}
+
+#blog .container-fluid {
+  padding: 0;
+}
+
+#blog .row.data {
+  padding-top: 25px;
+}
+
+#blog .row.data .col-md-8,
+#blog .row.data .col-md-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#blog .item {
+  border: 1px solid rgba(153,153,153,30%);
+  border-radius: 10px;
+  box-shadow: 0 3px 22px -7px #777;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding: 45px 50px;
+  margin-bottom: 20px;
+}
+
+#blog .container-fluid > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#blog .container-fluid .col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#blog .item h6 {
+  font-size: 1.6em;
+}
+
+#blog .item .date {
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+}
+
+#blog .item i, #blog .item p.comments {
+  display: inline-block;
+}
+
+#blog .item p.comments {
+  margin-left: 10px;
+}
+
+#blog .item img {
+  border-radius: 5px;
+  width: 50px;
+  height: auto;
+  float: right;
+}
+
+/* CONTACT SECTION  */
+
+#contact {
+  background-color: #EDEDED;
+  padding-top: 60px;
+}
+
+#contact .contact-us {
+  margin-bottom: 50px;
+}
+
+#contact i {
+  margin-bottom: 20px;
+  color: #008ed6;
+  font-size: 1.5em;
+}
+
+#contactForm2 {
+  background-color: #15141a;
+  padding: 50px;
 }
