@@ -570,7 +570,7 @@
                 </div>
               </div>
             </div>
-            
+
 
           </div>
         </div>
@@ -609,8 +609,7 @@
                     </div>
 
                     <div class="col-md-6 form-group">
-                        <textarea id="message2" class="form-control" placeholder="MESSAGE *" rows="6" required></textarea>
-
+                        <textarea id="message2" class="form-control" placeholder="MESSAGE *" rows="7" required></textarea>
                     </div>
                     <div class="col-md-12">
                         <button class="btn btn-action" type="submit">Enviar Mensaje</button>
@@ -622,6 +621,53 @@
         </div>
       </div>
     </div>
+
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        var pin = {lat: -12.094608, lng: -77.022933};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: pin
+        });
+        var marker = new google.maps.Marker({
+          position: pin,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoepfIg-fJ6fV5O0_vtVRKpCau4cFWL4Q&callback=initMap">
+    </script>
+
+    <footer>
+        <div class="container text-center">
+          <div class="row social-media">
+            <div class="col-md-4">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row copyright">
+            <div class="col-md-12">
+              <p class="darkgrey">COPYRIGHT © 2018 THE ART DEPARTMENT_STUDIO</p>
+            </div>
+          </div>
+        </div>
+    </footer>
 
     <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
 

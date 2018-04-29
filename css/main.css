@@ -95,7 +95,7 @@ button.btn {
   font-family: "SourceSansPro-Bold";
   text-transform: uppercase;
   color: #FFF;
-  font-size: 14px;
+  font-size: 13px;
   width: 165px;
   height: 50px;
   letter-spacing: 0.05em;
@@ -209,7 +209,7 @@ button:focus {
 }
 
 
-#contactForm .form-control {
+.form-control {
   font-size: 0.8em;
   padding: .75em 1.1em;
 }
@@ -479,6 +479,8 @@ button:focus {
 #contact {
   background-color: #EDEDED;
   padding-top: 60px;
+  position: relative;
+  z-index: 2;
 }
 
 #contact .contact-us {
@@ -493,5 +495,55 @@ button:focus {
 
 #contactForm2 {
   background-color: #15141a;
-  padding: 50px;
+  padding: 50px 60px 25px;
+  transform: translateY(60px);
+}
+
+#contactForm2 .form-control {
+  color: #999;
+  background-color: #15141a;
+  border: 1px solid #999;
+}
+
+#contactForm2 #name2,
+#contactForm2 #email2 {
+  margin-bottom: 17px;
+}
+
+#contactForm2 button.btn {
+  float: right;
+  margin-right: 0;
+}
+
+/* GOOGLE MAP */
+
+#map {
+  height: 375px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* FOOTER */
+footer {
+  background-color: #15141a;
+  padding: 50px 0 30px;
+}
+div.social-media {
+  margin: 0 auto 20px;
+  width: 200px;
+}
+
+div.social-media i {
+  color: #999;
+  transition: all 0.35s ease;
+}
+
+div.social-media i:hover {
+  color: #008ed6;
+}
+
+div.copyright {
+  font-size: 0.8em;
+  margin: 0 auto;
+  width: 400px;
 }
