@@ -25,7 +25,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
               <a class="navbar-brand" href="#">
                 <img class="logo" src="img/logo.png" alt="Dreysac logo"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +34,10 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="#productos">Productos</a>
-                  <a class="nav-item nav-link" href="#clientes">Clientes</a>
-                  <a class="nav-item nav-link" href="#testimonios">Testimonios</a>
-                  <a class="nav-item nav-link" href="#contacto">Contacto</a>
+                  <a class="nav-item nav-link" href="#content">Productos</a>
+                  <a class="nav-item nav-link" href="#clients">Clientes</a>
+                  <a class="nav-item nav-link" href="#testimonials">Testimonios</a>
+                  <a class="nav-item nav-link" href="#contact">Contacto</a>
                   <a class="nav-item nav-link" href="#blog">Blog</a>
                 </div>
               </div>
@@ -209,13 +209,15 @@
       <hr>
       <div class="container products">
         <div class="row product">
+          <div class="offset-md-6 col-md-5">
+            <p class="subtitles">NUESTROS PRODUCTOS</p>
+            <h3 class="titles">Rowachol</h3>
+          </div>
           <div class="col-md-6">
             <img src="http://via.placeholder.com/420x280" alt="rowachol">
           </div>
           <div class="col-md-5">
             <div class="content-box">
-              <p class="subtitles">NUESTROS PRODUCTOS</p>
-              <h3 class="titles">Rowachol</h3>
               <p class="dashes">__</p>
               <p class="darkgrey">Sus principios activos con el canfeno, borneol, cineol y pineno entre otros. Sirve para tratar la colesisticis, colelitisis (formación de cálculos en la vesícula biliar), espasmos biliares y transtornos heptobiliares.</p>
               <p>Se debe ejercer cautela en la dosificación en pacientes que estén recibiendo anticoagulantes orales u otros agentes metabolizados por el hígado donde la dosis es crítica.</p>
@@ -223,12 +225,14 @@
           </div>
         </div>
         <div class="row product">
+          <div class="offset-md-6 col-md-5">
+            <h3 class="titles">Rowatinex</h3>
+          </div>
           <div class="col-md-6">
             <img src="http://via.placeholder.com/420x280" alt="rowatinex">
           </div>
           <div class="col-md-5">
             <div class="content-box">
-              <h3 class="titles">Rowatinex</h3>
               <p class="dashes">__</p>
               <p class="darkgrey">Cápsulas esféricas cuyo principio activo son los terpenos. Sirve para combatir la litiasis renal y aliviar los dolores que genera debido a la combinación de terpenos en acción antiinflamatoria, analgésica y espamolítica.</p>
               <p>Se debe ejercer cautela en la dosificación en pacientes que estén recibiendo anticoagulantes orales u otros agentes metabolizados por el hígado donde la dosis es crítica.</p>
@@ -701,6 +705,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Validator Js -->
     <script type="text/javascript" src="js/validator.min.js"></script>
+    <!-- Smooth Scroll JS  -->
+    <script src="js/smooth-scroll.min.js"></script>
     <!-- Main JS  -->
     <script src="js/main.js"></script>
 

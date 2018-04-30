@@ -133,7 +133,8 @@ button:focus {
 }
 
 #navbar .navbar {
-  padding: 0;
+  padding: 0 11% 10px;
+  background-color: #0f2644;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #FFF;
@@ -275,7 +276,7 @@ button:focus {
 }
 
 #content .products .product img {
-  margin: 50px auto 0;
+  margin: 35px auto 0;
 }
 
 /* CAROUSEL */
