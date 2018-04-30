@@ -539,7 +539,9 @@ div.social-media i {
 }
 
 div.social-media i:hover {
+  color: black;
   color: #008ed6;
+
 }
 
 div.copyright {
