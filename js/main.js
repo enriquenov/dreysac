@@ -98,14 +98,14 @@
 		var waypoint1 = new Waypoint({
 		  element: document.getElementById('navbar'),
 		  handler: function() {
-		    $('a[href="#"]').toggleClass('active');
+		    $('a[href="#home"]').toggleClass('active');
 		  },
 			offset: 72
 		})
 		var waypoint2 = new Waypoint({
 		  element: document.getElementById('products'),
 		  handler: function() {
-				$('a[href="#"]').toggleClass('active');
+				$('a[href="#home"]').toggleClass('active');
 		    $('a[href="#products"]').toggleClass('active');
 		  },
 			offset: 72
