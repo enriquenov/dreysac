@@ -91,18 +91,18 @@ h3.titles {
   border-color: rgba(216, 216, 216, 50%);
 }
 
-button.btn {
+a.btn {
   font-family: "SourceSansPro-Bold";
   text-transform: uppercase;
   color: #FFF;
   font-size: 13px;
   width: 165px;
-  height: 50px;
   letter-spacing: 0.05em;
   margin-top: 10px;
+  padding: 15px;
 }
 
-button:focus {
+a:focus {
   outline: none;
 }
 
@@ -166,27 +166,6 @@ button:focus {
  margin-bottom: 30px;
 }
 
-/* #header .logo {
- display: inline-block;
- font-family: "SourceSansPro-Bold";
- font-size: 3em;
- width: 180px;
- height: auto;
-}
-
-#header .nav-item a {
- color: #FFF;
-}
-
-#header h2 {
- font-size: 1.6em;
-}
-
-#header .menu {
- display: inline-block;
- float: right;
-} */
-
 #header p.subtitles {
   margin-top: 30px;
 }
@@ -237,8 +216,8 @@ button:focus {
 
 /* CONTENT */
 #content .dreysac, #content .products, #content .team, #content .usage, #blog {
-  margin-top: 50px;
-  margin-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 #content .dreysac {
@@ -268,7 +247,7 @@ button:focus {
 }
 
 #content .products {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #content .products .product {
@@ -414,7 +393,7 @@ button:focus {
   margin: 100px auto;
 }
 
-#blog button.visit {
+#blog a.visit {
   transform: translateX(280%) translateY(-200%);
 }
 
@@ -511,7 +490,7 @@ button:focus {
   margin-bottom: 17px;
 }
 
-#contactForm2 button.btn {
+#contactForm2 a.btn {
   float: right;
   margin-right: 0;
 }
@@ -549,4 +528,12 @@ div.copyright {
   font-size: 0.8em;
   margin: 0 auto;
   width: 400px;
+}
+
+
+.activated {
+  color: red;
+  border-top: 1px solid green;
+  font-style: italic;
+  background-color: white;
 }

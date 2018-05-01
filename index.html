@@ -33,8 +33,8 @@
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="#content">Productos</a>
+                  <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#products">Productos</a>
                   <a class="nav-item nav-link" href="#clients">Clientes</a>
                   <a class="nav-item nav-link" href="#testimonials">Testimonios</a>
                   <a class="nav-item nav-link" href="#contact">Contacto</a>
@@ -50,39 +50,15 @@
     <div id="header">
       <div class="container">
         <div class="row">
-          <!-- <div class="top col-md-12">
-
-            <img class="logo" src="img/logo.png" alt="Dreysac logo">
-            <div class="menu">
-              <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#header">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Clientes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Testimonios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-              </ul>
-            </div>
-
-          </div> -->
           <div class="col-md-5">
             <p class="subtitles">REPRESENTANTES EXCLUSIVOS</p>
             <h1 class="jumbo">ROWA<br>Pharmaceuticals LTD.</h1>
             <p class="darkgrey">Laboratorio de origen Alemán con presencia en más de 70 países del mundo.</p>
-            <button type="button" class="btn btn-action">CONTÁCTANOS</button>
-            <button type="button" class="btn btn-transparent">PRODUCTOS</button>
+
+            <!-- <button type="button" class="btn btn-action">CONTÁCTANOS</button>
+            <button type="button" class="btn btn-transparent">PRODUCTOS</button> -->
+            <a class="btn btn-action" href="#contact" role="button">CONTÁCTANOS</a>
+            <a class="btn btn-transparent" href="#products" role="button">PRODUCTOS</a>
           </div>
           <div class="offset-md-2 col-md-5">
             <div class="contact-form-container">
@@ -108,7 +84,7 @@
                           <!-- <div class="help-block with-errors"></div> -->
                       </div>
                       <div class="col-md-12">
-                          <button class="btn btn-action" type="submit">Enviar Mensaje</button>
+                          <a class="btn btn-action" href="#" role="button">ENVIAR MENSAJE</a>
                       </div>
                   </div>
               </form>
@@ -207,7 +183,7 @@
         </div>
       </div>
       <hr>
-      <div class="container products">
+      <div id="products" class="container products">
         <div class="row product">
           <div class="offset-md-6 col-md-5">
             <p class="subtitles">NUESTROS PRODUCTOS</p>
@@ -464,7 +440,7 @@
             <p class="subtitles">ARTÍCULOS</p>
             <h3 class="titles">Descubre nuestro Blog</h3>
             <p class="dashes">__</p>
-            <button type="button" class="btn btn-action visit">VISITAR BLOG</button>
+            <a class="btn btn-action visit" href="#" role="button">VISITAR BLOG</a>
           </div>
         </div>
       </div>
@@ -633,7 +609,7 @@
                         <textarea id="message2" class="form-control" placeholder="MESSAGE *" rows="7" required></textarea>
                     </div>
                     <div class="col-md-12">
-                        <button class="btn btn-action" type="submit">Enviar Mensaje</button>
+                        <a class="btn btn-action" href="#" role="button">ENVIAR MENSAJE</a>
                     </div>
                 </div>
             </form>
@@ -707,6 +683,8 @@
     <script type="text/javascript" src="js/validator.min.js"></script>
     <!-- Smooth Scroll JS  -->
     <script src="js/smooth-scroll.min.js"></script>
+    <!-- Waypoints  -->
+    <script src="js/noframework.waypoints.min.js"></script>
     <!-- Main JS  -->
     <script src="js/main.js"></script>
 
