@@ -65,7 +65,23 @@
 			}
 		},
 		stagePadding: 200
-	})
+	});
+
+	$(".owl-three").owlCarousel({
+		autoplay: false,
+		loop: true,
+		nav: true,
+		dots: false,
+		margin: 50,
+		responsive: {
+			0: {
+				items: 1
+			},
+			1000: {
+				items: 1
+			}
+		}
+	});
 
 	/*=========================================================================
 				Init smooth-scroll

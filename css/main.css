@@ -136,11 +136,11 @@ a:focus {
   padding: 0 11% 10px;
   background-color: #0f2644;
 }
+
 .navbar-light .navbar-nav .nav-link {
   color: #FFF;
   margin: 0 0 0 15px;
 }
-
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: #FFF;
@@ -260,67 +260,66 @@ a:focus {
 
 /* CAROUSEL */
 
-#carouselExampleControls {
-  box-shadow: 0 3px 22px -7px #777;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transform: translateY(60px);
-}
-
-#carouselExampleControls .carousel-item {
+#products .owl-carousel .owl-stage-outer {
   margin: 0 auto;
   background-color: #FFF;
   border: 1px solid #999;
   border: 1px solid rgba(153,153,153,30%);
   border-radius: 1px;
+  box-shadow: 0 3px 22px -7px #777;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(60px);
 }
 
-.carousel-item .container {
+#products .owl-carousel .item .container {
   width: 95%;
 }
 
-.carousel-item .comment {
+#products .owl-carousel .item .comment {
   font-size: 90%;
 }
 
-.carousel-item p.subtitles {
+#products .owl-carousel .item p.subtitles {
   margin-top: 20px;
 }
 
-.carousel-item .comment h3.titles {
+#products .owl-carousel .item .comment h3.titles {
   font-size: 24px;
   line-height: 1em;
 }
 
-.carousel-item .comment p.darkgrey {
+#products .owl-carousel .item .comment p.darkgrey {
   padding-top: 20px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: none;
+#products .owl-theme .owl-nav {
+  margin-top: -80px;
+  position: relative;
 }
 
-.carousel-control-prev {
-  transform: translateX(-100px);
+#products .owl-carousel .owl-nav button.owl-prev {
+  transform: translateX(-380px);
 }
 
-.carousel-control-next {
-  transform: translateX(100px);
+#products .owl-carousel .owl-nav button.owl-next {
+  transform: translateX(380px);
 }
 
-.fa-arrow-left,
-.fa-arrow-right {
+#products .owl-carousel .owl-nav button.owl-prev,
+#products .owl-carousel .owl-nav button.owl-next {
   color: #999;
   background-color: #FFF;
   /*border: 1px solid #999;*/
   border-radius: 50%;
   box-shadow: 0 3px 22px -7px #777;
   box-shadow: 0 1px 18px rgba(0, 0, 0, 0.30);
-  padding: 18px 19px;
-  transform: translateX(-17px) translateY(-17px);
+  font-size: 2.4em;
+  padding: 0px 26px 5px!important;
+  transition: all .3s ease;
 }
 
-.fa-arrow-left:hover,
-.fa-arrow-right:hover {
+#products .owl-carousel .owl-nav button.owl-prev:hover,
+#products .owl-carousel .owl-nav button.owl-next:hover {
   background-color: #008ed6;
   color: #FFF;
 }
