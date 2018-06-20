@@ -227,7 +227,11 @@ a:focus {
 }
 
 /* CONTENT */
-#content .dreysac, #content .products, #content .team, #content .usage, #blog {
+#content .dreysac,
+#content .products,
+#content .team,
+#content .usage,
+#blog {
   padding-top: 50px;
   padding-bottom: 80px;
 }
@@ -256,6 +260,18 @@ a:focus {
 
 #content .usage {
   text-align: center;
+}
+
+.rowachol-usage img {
+  margin: 40px auto 30px;
+  height: 120px;
+  width: auto;
+}
+
+.rowatinex-usage img {
+  margin: 30px auto 20px;
+  height: 140px;
+  width: auto;
 }
 
 #content .products {
