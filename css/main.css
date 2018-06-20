@@ -245,6 +245,8 @@ a:focus {
 }
 
 #content .staff img {
+  width: auto;
+  height: 160px;
   margin: 20px auto;
 }
 
@@ -279,11 +281,12 @@ a:focus {
 }
 
 #content .products .product {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 #content .products .product img {
   margin: 35px auto 0;
+  width: 90%;
 }
 
 /* CAROUSEL */
