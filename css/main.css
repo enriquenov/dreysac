@@ -19,6 +19,8 @@
 body {
   font-family: "SourceSansPro-Regular";
   font-size: 16px;
+  padding-top: 90px;
+  overflow-x: hidden;
 }
 
 p {
@@ -189,15 +191,11 @@ a:focus {
 /* SECTIONS */
 
 #navbar {
- background-color: #0f2644;
- color: #FFF;
- padding-top: 35px;
- padding-bottom: 30px;
-}
-
-#navbar .navbar {
-  padding: 8px 11% 10px;
-  background-color: rgba(15,38,68);
+  /* width: 100vw; */
+  background-color: #0f2644;
+  color: #FFF;
+  padding: 20px 11%;
+  /* overflow: hidden; */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -210,7 +208,7 @@ a:focus {
   border-bottom: 2px solid #008ED6;
 }
 
-#navbar .logo {
+.logo {
  display: inline-block;
  font-family: "SourceSansPro-Bold";
  font-size: 3em;
@@ -222,40 +220,47 @@ a:focus {
   color: #FFF;
 }
 
-#header {
- background-color: #0f2644;
- color: #FFF;
- padding: 40px 0 60px;
+#home {
+  overflow-x: hidden;
+  background-color: #0f2644;
+  color: #FFF;
+  padding: 40px 0 60px;
 }
 
-#header .top {
+#home .col-md-5 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+#home .top {
  margin-top: 30px;
  margin-bottom: 30px;
 }
 
-#header p.subtitles {
+#home p.subtitles {
   margin-top: 30px;
 }
 
-#header .contact-form-container {
+.contact-form-container {
   padding: 25px;
   background-color: #FFF;
   color: #1A1A1A;
   width: 377px;
   border-radius: 2px;
+  display: none;
 }
 
-#header .contact-form-container h5 {
+.contact-form-container h5 {
   font-size: 1.5em;
   margin-bottom: 0;
 }
 
-#header .contact-form-container p {
+.contact-form-container p {
   color: #999;
   margin-bottom: 2em;
 }
 
-#header a.btn:hover,
+#home a.btn:hover,
 #blog a.btn:hover {
   box-shadow: 0 1px 18px rgba(0,0,0,0.30);
 }
@@ -487,9 +492,8 @@ a:focus {
   background-color: #FFF;
   padding: 100px 0;
 }
-
 #blog a.visit {
-  transform: translateX(200%) translateY(-200%);
+  display: none;
 }
 
 #blog .container-fluid {
@@ -635,12 +639,22 @@ div.copyright {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1200px) {
-
+@media only screen and (min-width: 900px) {
+  #blog a.visit {
+    transform: translateX(200%) translateY(-200%);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  #home .col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .contact-form-container {
+    display: block;
+  }
   #blog a.visit {
     transform: translateX(260%) translateY(-200%);
   }
+
 }
