@@ -26,7 +26,7 @@ body {
 
 p {
   margin-bottom: 1em;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h6 {
@@ -573,10 +573,11 @@ a:focus {
 
 #blog {
   background-color: #FFF;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 #blog a.visit {
-  display: none;
+  display: block;
+  margin: 30px auto 0;
 }
 
 #blog .container-fluid {
@@ -642,7 +643,7 @@ a:focus {
 
 #contact {
   background-color: #EDEDED;
-  padding-top: 60px;
+  padding-top: 40px;
   position: relative;
   z-index: 2;
 }
@@ -673,7 +674,7 @@ a:focus {
 
 #contactForm2 {
   background-color: #15141a;
-  padding: 50px 60px 25px;
+  padding: 30px 30px;
   transform: translateY(60px);
 }
 
@@ -689,8 +690,8 @@ a:focus {
 }
 
 #contactForm2 a.btn {
-  float: right;
-  margin-right: 0;
+  margin: 10px auto 0;
+  /* margin-right: 0; */
 }
 
 /* GOOGLE MAP */
@@ -704,7 +705,7 @@ a:focus {
 /* FOOTER */
 footer {
   background-color: #15141a;
-  padding: 50px 0 30px;
+  padding: 30px 0 15px;
 }
 div.social-media {
   margin: 0 auto 20px!important;
@@ -721,10 +722,12 @@ div.social-media i:hover {
   color: #008ed6;
 }
 
-div.copyright {
-  font-size: 0.8em;
+.copyright {
   margin: 0 auto!important;
-  width: 400px;
+}
+
+.copyright p {
+  font-size: 0.7em;
 }
 
 
@@ -749,9 +752,6 @@ div.copyright {
 }
 
 @media only screen and (min-width: 600px) {
-  p {
-    font-size: 16px;
-  }
   a.btn {
     font-size: 13px;
     padding: 15px;
@@ -817,8 +817,32 @@ div.copyright {
   #testimonials .avatar-info p {
     font-size: 18px;
   }
+  #blog {
+    padding: 100px 0;
+  }
   #blog .container-fluid {
     display: block;
+  }
+  #blog a.visit {
+    display: none;
+  }
+  #contact {
+    padding-top: 60px;
+  }
+  #contactForm2 {
+    padding: 50px 60px 25px;
+  }
+  #contactForm2 a.btn {
+    float: right;
+  }
+  .copyright {
+    width: 400px;
+  }
+  .copyright p {
+    font-size: 0.8em;
+  }
+  footer {
+    padding: 50px 0 30px;
   }
 }
 @media only screen and (min-width: 750px) {
@@ -826,6 +850,9 @@ div.copyright {
     width: 100%;
   }
   .report {
+    display: block;
+  }
+  #blog a.visit {
     display: block;
   }
 }
