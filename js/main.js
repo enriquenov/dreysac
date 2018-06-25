@@ -78,7 +78,7 @@
 				items: 2
 			}
 		},
-		stagePadding: 200
+		stagePadding: 120
 	});
 
 	$(".owl-three").owlCarousel({
