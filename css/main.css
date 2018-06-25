@@ -21,11 +21,12 @@ body {
   font-size: 16px;
   padding-top: 90px;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 p {
   margin-bottom: 1em;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h6 {
@@ -35,6 +36,10 @@ h6 {
 hr {
   border-top: 1px solid rgb(153,153,153);
   border-top: 1px solid rgba(153,153,153,30%);
+}
+
+.container .row {
+  margin: 0;
 }
 
 /* HELPERS */
@@ -56,7 +61,6 @@ div.longdash {
 h3.titles {
   font-weight: bold;
   line-height: 1.2em;
-  letter-spacing: 0.03em;
 }
 
 .darkgrey {
@@ -72,7 +76,7 @@ h3.titles {
 
 .jumbo {
   font-family: "SourceSansPro-Regular";
-  font-size: 2.8em;
+  font-size: 2.4em;
   line-height: 1.3em;
   margin-bottom: 0.5em;
 }
@@ -81,14 +85,13 @@ h3.titles {
   color: #008ed6;
   font-family: "SourceSansPro-Bold";
   font-size: 14px;
-  /* margin-top: 30px; */
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .btn-action {
   background-color: #008ED6;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .btn-transparent {
@@ -100,11 +103,11 @@ a.btn {
   font-family: "SourceSansPro-Bold";
   text-transform: uppercase;
   color: #FFF;
-  font-size: 13px;
-  width: 165px;
+  font-size: 12px;
+  width: 120px;
   letter-spacing: 0.05em;
   margin-top: 10px;
-  padding: 15px;
+  padding: 12px;
   transition: all 0.35s ease;
 }
 
@@ -194,7 +197,7 @@ a:focus {
 #navbar {
   background-color: #0f2644;
   color: #FFF;
-  padding: 30px 5%;
+  padding: 20px 7%;
 }
 
 .navbar-toggler {
@@ -227,7 +230,7 @@ a:focus {
   overflow-x: hidden;
   background-color: #0f2644;
   color: #FFF;
-  padding: 40px 0 200px;
+  padding: 40px 0;
 }
 
 #home .col-md-5 {
@@ -294,19 +297,24 @@ a:focus {
 }
 
 /* CONTENT */
-#content .dreysac,
-#content .products,
+#content .dreysac {
+  padding-top: 50px;
+}
 #content .team,
 #content .usage,
 #blog {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+#content .products {
+  padding-bottom: 50px;
+}
 
 .dreysac img {
   width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 #content .staff {
@@ -354,7 +362,7 @@ a:focus {
 
 .rowachol-usage img {
   margin: 40px auto 30px;
-  height: 120px;
+  height: 80px;
   width: auto;
 }
 
@@ -374,7 +382,7 @@ a:focus {
 
 #content .products .product img {
   margin: 35px auto 0;
-  width: 100%;
+  width: 80%;
 }
 
 /* CAROUSEL */
@@ -475,7 +483,7 @@ a:focus {
 /* CLIENTES */
 
 #clients {
-  padding: 150px 0 60px;
+  padding: 50px 0 20px;
   background-color: #05447d;
 }
 #clients h3.titles, #clients p.description {
@@ -488,7 +496,7 @@ a:focus {
 
 .logos {
   width: 80%;
-  margin: 60px auto 0;
+  margin: 30px auto 0;
   padding: 0;
   list-style: none;
 
@@ -511,7 +519,7 @@ a:focus {
 .logos img {
   margin-bottom: 30px;
   height: auto;
-  width: 200px;
+  width: 100px;
 }
 
 /* TESTIMONIALS */
@@ -522,7 +530,7 @@ a:focus {
 }
 
 #testimonials .container {
-  width: 70%;
+  /* width: 70%; */
 }
 
 #testimonials .owl-carousel.owl-drag .owl-item {
@@ -538,24 +546,26 @@ a:focus {
 }
 
 #testimonials p.white.italics {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #testimonials .avatar {
   padding: 0;
+  margin-right: 10px;
 }
 
 #testimonials .avatar-info {
-  padding: 5px 0;
+  padding: 0;
 }
 
 #testimonials .avatar-info p {
+  font-size: 14px;
   margin-bottom: 0;
 }
 
 #testimonials .avatar img {
   border-radius: 50%;
-  width: 60px;
+  width: 100%;
   height: auto;
 }
 
@@ -570,6 +580,7 @@ a:focus {
 }
 
 #blog .container-fluid {
+  display: none;
   padding: 0;
   margin-top: 50px;
 }
@@ -637,13 +648,17 @@ a:focus {
 }
 
 #contact .container-fluid {
-  padding: 0;
+  /* padding: 0; */
+}
+#contact .container-fluid .row {
+  /* margin: 0; */
 }
 
 #contact .col-md-8 {
   flex: 0 0 100%;
   max-width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 #contact .contact-us {
@@ -681,7 +696,7 @@ a:focus {
 /* GOOGLE MAP */
 
 #map {
-  height: 375px;
+  height: 400px;
   width: 100%;
   z-index: 1;
 }
@@ -692,7 +707,7 @@ footer {
   padding: 50px 0 30px;
 }
 div.social-media {
-  margin: 0 auto 20px;
+  margin: 0 auto 20px!important;
   width: 200px;
 }
 
@@ -704,12 +719,11 @@ div.social-media i {
 div.social-media i:hover {
   color: black;
   color: #008ed6;
-
 }
 
 div.copyright {
   font-size: 0.8em;
-  margin: 0 auto;
+  margin: 0 auto!important;
   width: 400px;
 }
 
@@ -721,11 +735,53 @@ div.copyright {
   background-color: white;
 }
 
+/* ------------- */
 /* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 400px) {
+  a.btn {
+    width: 130px;
+  }
+  .logos img {
+    width: 100px;
+  }
+}
 
 @media only screen and (min-width: 600px) {
-  .report {
-    display: block;
+  p {
+    font-size: 16px;
+  }
+  a.btn {
+    font-size: 13px;
+    padding: 15px;
+    width: 165px;
+  }
+  h3.titles {
+    letter-spacing: 0.03em;
+  }
+  #navbar {
+    padding: 20px 5%;
+  }
+  .container .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  #home {
+    padding: 40px 0 200px;
+  }
+  #content .dreysac {
+    padding-bottom: 50px;
+  }
+  .dreysac img {
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  #content .products {
+    padding-top: 50px;
+  }
+  .rowachol-usage img {
+    height: 120px;
   }
   #products .owl-carousel .owl-nav button.owl-prev {
     transform: translateX(-280px);
@@ -737,12 +793,46 @@ div.copyright {
     flex: 0 0 80%;
     max-width: 80%;
   }
+  #clients {
+    padding: 150px 0 60px;
+  }
+  .logos {
+    margin: 60px auto 0;
+  }
+  .logos img {
+    width: 200px;
+  }
+  #testimonials .container {
+    width: 70%;
+  }
+  #testimonials p.white.italics {
+    font-size: 1.2em;
+  }
+  #testimonials .avatar img {
+    width: 60px;
+  }
+  #testimonials .avatar-info {
+    padding: 5px 0;
+  }
+  #testimonials .avatar-info p {
+    font-size: 18px;
+  }
+  #blog .container-fluid {
+    display: block;
+  }
 }
-
+@media only screen and (min-width: 750px) {
+  #content .products .product img {
+    width: 100%;
+  }
+  .report {
+    display: block;
+  }
+}
 
 @media only screen and (min-width: 900px) {
   #navbar {
-    padding: 20px 11%;
+    padding: 20px 6%;
   }
   #home {
     padding: 40px 0 60px;
@@ -763,6 +853,19 @@ div.copyright {
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
+  #products .owl-carousel .owl-nav button.owl-prev {
+    transform: translateX(-320px);
+  }
+  #products .owl-carousel .owl-nav button.owl-next {
+    transform: translateX(320px);
+  }
+  #products .offset-md-2 {
+    margin-left: 16.666667%;
+  }
+  #products .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
   #clients {
     padding: 150px 0 100px;
   }
@@ -779,27 +882,23 @@ div.copyright {
   #blog a.visit {
     transform: translateX(200%) translateY(-200%);
   }
-  #products .owl-carousel .owl-nav button.owl-prev {
-    transform: translateX(-320px);
-  }
-  #products .owl-carousel .owl-nav button.owl-next {
-    transform: translateX(320px);
-  }
-  #products .offset-md-2 {
-    margin-left: 16.666667%;
-  }
-  #products .col-md-8 {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+  #contact .container-fluid {
+    padding-left:
   }
   #contact .col-md-8 {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
     margin-left: 16.666667%;
   }
+  #map {
+    height: 500px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  #navbar {
+    padding: 20px 10%;
+  }
   #home .col-md-5 {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
@@ -807,14 +906,13 @@ div.copyright {
   .contact-form-container {
     display: block;
   }
-  #blog a.visit {
-    transform: translateX(260%) translateY(-200%);
-  }
   #products .owl-carousel .owl-nav button.owl-prev {
     transform: translateX(-360px);
   }
   #products .owl-carousel .owl-nav button.owl-next {
     transform: translateX(360px);
   }
-
+  #blog a.visit {
+    transform: translateX(260%) translateY(-200%);
+  }
 }
