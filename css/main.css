@@ -54,7 +54,7 @@ div.longdash {
 
 h3.titles {
   font-weight: bold;
-  line-height: 0.5em;
+  line-height: 1.2em;
   letter-spacing: 0.03em;
 }
 
@@ -87,7 +87,7 @@ h3.titles {
 
 .btn-action {
   background-color: #008ED6;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .btn-transparent {
@@ -191,11 +191,13 @@ a:focus {
 /* SECTIONS */
 
 #navbar {
-  /* width: 100vw; */
   background-color: #0f2644;
   color: #FFF;
-  padding: 20px 11%;
-  /* overflow: hidden; */
+  padding: 30px 5%;
+}
+
+.navbar-toggler {
+  font-size: 1.6rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -224,7 +226,7 @@ a:focus {
   overflow-x: hidden;
   background-color: #0f2644;
   color: #FFF;
-  padding: 40px 0 60px;
+  padding: 40px 0 200px;
 }
 
 #home .col-md-5 {
@@ -297,18 +299,39 @@ a:focus {
 #content .usage,
 #blog {
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
-#content .dreysac {
-  padding-top: 50px;
+.dreysac img {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
 }
 
 #content .staff {
-  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 100%;
 }
 
-#content .staff img {
+#content .member {
+  text-align: center;
+  padding: 5px;
+  width: 250px;
+  height: 250px;
+}
+
+#content .member img {
   width: auto;
   height: 160px;
   margin: 20px auto;
@@ -319,7 +342,7 @@ a:focus {
   text-transform: uppercase;
 }
 
-#content .staff p {
+#content .member p {
   font-size: 13px;
   letter-spacing: 0.05em;
 }
@@ -350,10 +373,13 @@ a:focus {
 
 #content .products .product img {
   margin: 35px auto 0;
-  width: 90%;
+  width: 100%;
 }
 
 /* CAROUSEL */
+.report {
+  display: none;
+}
 
 #products .owl-carousel .owl-stage-outer {
   margin: 0 auto;
@@ -423,6 +449,22 @@ a:focus {
 #products .owl-carousel .owl-nav button.owl-prev:focus,
 #products .owl-carousel .owl-nav button.owl-next:focus {
   outline: none;
+}
+#products .offset-md-2 {
+  margin-left: 0;
+}
+#products .col-md-8 {
+  flex: 0 0 80%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.owl-stage-outer .item .col-md-5 {
+  display: none;
+}
+.owl-stage-outer .item .col-md-7 {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 /* CLIENTES */
@@ -639,9 +681,61 @@ div.copyright {
 
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 600px) {
+  .report {
+    display: block;
+  }
+  #products .owl-carousel .owl-nav button.owl-prev {
+    transform: translateX(-280px);
+  }
+  #products .owl-carousel .owl-nav button.owl-next {
+    transform: translateX(280px);
+  }
+  #products .col-md-8 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+
+
 @media only screen and (min-width: 900px) {
+  #navbar {
+    padding: 20px 11%;
+  }
+  #home {
+    padding: 40px 0 60px;
+  }
+  #content .dreysac, #content .products, #content .team, #content .usage, #blog {
+    padding-bottom: 80px;
+  }
+  #content .products .product img {
+    width: 90%;
+  }
+  .dreysac img {
+    margin-top: 0;
+  }
+  .owl-stage-outer .item .col-md-5 {
+    display: block;
+  }
+  .owl-stage-outer .item .col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
   #blog a.visit {
     transform: translateX(200%) translateY(-200%);
+  }
+  #products .owl-carousel .owl-nav button.owl-prev {
+    transform: translateX(-320px);
+  }
+  #products .owl-carousel .owl-nav button.owl-next {
+    transform: translateX(320px);
+  }
+  #products .offset-md-2 {
+    margin-left: 16.666667%;
+  }
+  #products .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
   }
 }
 
@@ -655,6 +749,12 @@ div.copyright {
   }
   #blog a.visit {
     transform: translateX(260%) translateY(-200%);
+  }
+  #products .owl-carousel .owl-nav button.owl-prev {
+    transform: translateX(-360px);
+  }
+  #products .owl-carousel .owl-nav button.owl-next {
+    transform: translateX(360px);
   }
 
 }
