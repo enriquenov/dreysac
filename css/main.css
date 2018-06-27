@@ -8,8 +8,16 @@
   src: url('fonts/SourceSansPro-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
-/* DOCUMENT CSS */
+/* CSS VARIABLES */
+:root {
+  --main-blue-color: #008ed6;
+  --main-navy-blue-color: #0f2644;
+  --main-white-color: #FFF;
+  --main-darkgrey-color: #999;
+  --purple-color: #6e45e2;
+}
 
+/* DOCUMENT CSS */
 * {
   margin: 0;
   padding: 0;
@@ -43,17 +51,16 @@ hr {
 }
 
 /* HELPERS */
-
 p.dashes {
   font-size: 2.25em;
-  color: #008ed6;
+  color: var(--main-blue-color);
   letter-spacing: 0.05em;
   line-height: 1em;
   margin-bottom: 0.1em;
 }
 
 div.longdash {
-  border-bottom: 1px solid #6e45e2;
+  border-bottom: 1px solid var(--purple-color);
   width: 80px;
   margin-bottom: 10px;
 }
@@ -64,10 +71,10 @@ h3.titles {
 }
 
 .darkgrey {
-  color: #999;
+  color: var(--main-darkgrey);
 }
 .white {
-  color: #FFF;
+  color: var(--main-white-color);
   color: rgba(255,255,255,80%);
 }
 .italics {
@@ -82,7 +89,7 @@ h3.titles {
 }
 
 .subtitles {
-  color: #008ed6;
+  color: var(--main-blue-color);
   font-family: "SourceSansPro-Bold";
   font-size: 14px;
   text-transform: uppercase;
@@ -90,12 +97,13 @@ h3.titles {
 }
 
 .btn-action {
-  background-color: #008ED6;
+  background-color: var(--main-blue-color);
   margin-right: 15px;
 }
 
 .btn-transparent {
   background-color: transparent;
+  border-color: rgb(216, 216, 216);
   border-color: rgba(216, 216, 216, 50%);
 }
 
@@ -125,16 +133,16 @@ a:focus {
 }
 
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #999;
+  color: var(--main-darkgrey-color);
 }
 .form-control::-moz-placeholder { /* Firefox 19+ */
-  color: #999;
+  color: var(--main-darkgrey-color);
 }
 .form-control:-ms-input-placeholder { /* IE 10+ */
-  color: #999;
+  color: var(--main-darkgrey-color);
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
-  color: #999;
+  color: var(--main-darkgrey-color);
 }
 
 /* PRELOADER */
@@ -228,8 +236,8 @@ a:focus {
 
 #home {
   overflow-x: hidden;
-  background-color: #0f2644;
-  color: #FFF;
+  background-color: var(--main-navy-blue-color);
+  color: var(-main-white-color);
   padding: 40px 0;
 }
 
