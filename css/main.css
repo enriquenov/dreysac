@@ -71,7 +71,7 @@ h3.titles {
 }
 
 .darkgrey {
-  color: var(--main-darkgrey);
+  color: var(--main-darkgrey-color);
 }
 .white {
   color: var(--main-white-color);
@@ -722,6 +722,7 @@ div.social-media {
 
 div.social-media i {
   color: #999;
+  font-size: 1.2em;
   transition: all 0.35s ease;
 }
 
@@ -927,6 +928,9 @@ div.social-media i:hover {
   }
   #map {
     height: 500px;
+  }
+  div.social-media i {
+    font-size: 1.5em;
   }
 }
 
