@@ -308,6 +308,7 @@ a:focus {
 /* CONTENT */
 #content .dreysac {
   padding-top: 50px;
+  margin-top: 60px;
 }
 #content .team,
 #content .usage,
@@ -558,24 +559,14 @@ a:focus {
   font-size: 1em;
 }
 
-#testimonials .avatar {
-  padding: 0;
-  margin-right: 10px;
-}
-
 #testimonials .avatar-info {
   padding: 0;
 }
 
 #testimonials .avatar-info p {
+  font-weight: bold;
   font-size: 14px;
   margin-bottom: 0;
-}
-
-#testimonials .avatar img {
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
 }
 
 /* BLOG SECTION  */
@@ -784,7 +775,6 @@ div.social-media i:hover {
     padding-bottom: 50px;
   }
   .dreysac img {
-    margin-top: 100px;
     margin-bottom: 0;
   }
   #content .products {
