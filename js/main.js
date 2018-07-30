@@ -50,8 +50,12 @@
 	/*=========================================================================
         Owl Carousel Init
     =========================================================================*/
+
+  // TESTIMONIALS SLIDER
 	$(".owl-one").owlCarousel({
 		autoplay: true,
+		autoplayTimeout: 9000,
+		dotsEach: true,
 		loop: true,
 		margin: 50,
 		responsive: {
@@ -63,6 +67,8 @@
 			}
 		}
 	});
+
+	// SLIDER
 
 	$(".owl-two").owlCarousel({
 		loop: true,
