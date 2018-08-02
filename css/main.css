@@ -12,7 +12,7 @@
 :root {
   --main-blue-color: #008ed6;
   --main-navy-blue-color: #0f2644;
-  --main-white-color: #FFF;
+  --main-white-color: #FFFFFF;
   --main-darkgrey-color: #999;
   --purple-color: #6e45e2;
 }
@@ -27,7 +27,7 @@
 body {
   font-family: "SourceSansPro-Regular";
   font-size: 16px;
-  padding-top: 90px;
+  /* padding-top: 70px; */
   overflow-x: hidden;
   min-width: 320px;
 }
@@ -75,6 +75,7 @@ h3.titles {
 }
 .white {
   color: var(--main-white-color);
+  color: #CEDBE8;
   color: rgba(255,255,255,80%);
 }
 .italics {
@@ -227,7 +228,7 @@ a:focus {
  display: inline-block;
  font-family: "SourceSansPro-Bold";
  font-size: 3em;
- width: 180px;
+ width: 120px;
  height: auto;
 }
 
@@ -236,10 +237,10 @@ a:focus {
 }
 
 #home {
-  overflow-x: hidden;
   background-color: var(--main-navy-blue-color);
-  color: var(-main-white-color);
-  padding: 40px 0;
+  color: var(--main-white-color);
+  overflow-x: hidden;
+  padding: 110px 0;
 }
 
 #home .col-md-5 {
@@ -504,8 +505,10 @@ a:focus {
   letter-spacing: 0.03em;
 }
 #clients p.description {
+  color: #CEDBE8;
   color: rgba(255,255,255,80%);
   font-size: 14.4px;
+  padding-bottom: 50px;
 }
 
 .logos {
@@ -693,8 +696,12 @@ a:focus {
   margin-bottom: 17px;
 }
 
+#contactForm2 .help-block.with-errors {
+  color: #FFF;
+}
+
 #contactForm2 a.btn {
-  margin: 10px auto 0;
+  margin: 0 auto;
   /* margin-right: 0; */
 }
 
@@ -756,7 +763,22 @@ div.social-media i:hover {
   }
 }
 
+@media only screen and (min-width: 480px) {
+  .logos img {
+    width: 145px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .logos img {
+    width: 150px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
+  body {
+    /* padding-top: 90px; */
+  }
   a.btn {
     font-size: 13px;
     padding: 15px;
@@ -768,19 +790,19 @@ div.social-media i:hover {
   #navbar {
     padding: 20px 5%;
   }
+  .logo {
+    width: 180px;
+  }
   .container .row {
     margin-left: -15px;
     margin-right: -15px;
   }
   #home {
-    padding: 40px 0 200px;
+    padding: 130px 0 200px;
   }
   #content .dreysac {
     margin-top: 60;
     padding-bottom: 50px;
-  }
-  .dreysac-img {
-    display: block;
   }
   .dreysac img {
     margin-top: 150px;
@@ -802,14 +824,11 @@ div.social-media i:hover {
     flex: 0 0 80%;
     max-width: 80%;
   }
-  #clients {
-    padding: 150px 0 60px;
-  }
   .logos {
-    margin: 60px auto 0;
+    margin: 0 auto;
   }
   .logos img {
-    width: 200px;
+    width: 160px;
   }
   #testimonials .container {
     width: 70%;
@@ -841,6 +860,13 @@ div.social-media i:hover {
   #contactForm2 {
     padding: 50px 60px 25px;
   }
+  #contactForm2 > .row {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #contactForm2 > .row > .col-md-6:first-child {
+    padding: 0;
+  }
   #contactForm2 a.btn {
     float: right;
   }
@@ -854,15 +880,24 @@ div.social-media i:hover {
     padding: 50px 0 30px;
   }
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
+  .dreysac-img {
+    display: block;
+  }
   #content .products .product img {
     width: 100%;
+  }
+  #clients {
+    padding: 150px 0 60px
   }
   .report {
     display: block;
   }
   #blog a.visit {
     display: block;
+  }
+  #contactForm2 > .row {
+    width: 100%;
   }
 }
 
@@ -871,7 +906,7 @@ div.social-media i:hover {
     padding: 20px 6%;
   }
   #home {
-    padding: 40px 0 60px;
+    padding: 130px 0 60px;
   }
   #content .dreysac, #content .team, #content .usage, #blog {
     padding-bottom: 80px;
@@ -912,20 +947,14 @@ div.social-media i:hover {
     padding: 150px 0 100px;
   }
   .logos {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-  }
-  .logos img {
-    width: 160px;
   }
   #testimonials .container {
     width: 100%;
   }
   #blog a.visit {
     transform: translateX(200%) translateY(-200%);
-  }
-  #contact .container-fluid {
-    padding-left:
   }
   #contact .col-md-8 {
     flex: 0 0 66.666667%;
@@ -937,6 +966,15 @@ div.social-media i:hover {
   }
   div.social-media i {
     font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .clients-desc {
+    transform: translateX(60px);
+  }
+  .logos img {
+    width: 160px;
   }
 }
 
@@ -959,5 +997,12 @@ div.social-media i:hover {
   }
   #blog a.visit {
     transform: translateX(260%) translateY(-200%);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #contactForm2 {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }

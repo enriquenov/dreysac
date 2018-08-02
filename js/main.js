@@ -62,13 +62,17 @@
 			0: {
 				items: 1
 			},
+			800: {
+				items: 2
+			},
 			1000: {
 				items: 2
 			}
-		}
+		},
+		margin: 50
 	});
 
-	// SLIDER
+	// ARTICLES SLIDER
 
 	$(".owl-two").owlCarousel({
 		loop: true,

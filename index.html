@@ -4,8 +4,26 @@
     <meta charset="utf-8">
     <meta name="author" content="Enrique Novoa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreysac</title>
-
+    <title>Dreysac | Droguería Reyes S.A.C.</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- Bootstrap stylesheet link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -68,19 +86,19 @@
               <form id="contactForm" class="contact-form" method="post" action="contact-form.php" data-toggle="validator">
                   <div class="row">
                       <div class="col-md-12 form-group">
-                          <input id="name" class="form-control" type="text" name="name" placeholder="NAME *" required>
-                          <!-- <div class="help-block with-errors"></div> -->
+                          <input id="name" class="form-control" type="text" name="name" placeholder="NAME *" data-error="Name is required."required>
+                          <div class="help-block with-errors"></div>
                       </div>
                       <div class="col-md-12 form-group">
                           <input id="email" class="form-control" type="email" name="email" placeholder="EMAIL *" required>
-                          <!-- <div class="help-block with-errors"></div> -->
+                          <div class="help-block with-errors"></div>
                       </div>
                       <div class="col-md-12 form-group">
                           <input id="subject" class="form-control" type="text" name="subject" placeholder="SUBJECT *">
                       </div>
                       <div class="col-md-12 form-group">
-                          <textarea id="message" class="form-control" placeholder="MESSAGE *" rows="3" required></textarea>
-                          <!-- <div class="help-block with-errors"></div> -->
+                          <textarea id="message" class="form-control" placeholder="MESSAGE *" rows="3" data-error="Message is required." required></textarea>
+                          <div class="help-block with-errors"></div>
                       </div>
                       <div class="col-md-12">
                           <a class="btn btn-action" href="#" role="button">ENVIAR MENSAJE</a>
@@ -191,7 +209,7 @@
           <div class="col-md-6 rowachol-usage">
             <img src="img/products/rowachol_higado.jpg" alt="rowachol">
             <h6>Rowachol</h6>
-            <p class="darkgrey">Recetado para el tratamiento de los desordenes Hepto-biliares . Potencia la función metabólica del hígado al reducir la estasis biliar.</p>
+            <p class="darkgrey">Recetado para el tratamiento de los desórdenes Hepto-biliares. Potencia la función metabólica del hígado al reducir la estasis biliar.</p>
           </div>
           <div class="col-md-6 rowatinex-usage">
             <img src="img/products/rowatinex_rinon.jpg" alt="rowatinex">
@@ -307,7 +325,7 @@
     <div id="clients">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-lg-5 clients-desc">
             <p class="subtitles">NUESTROS CLIENTES</p>
             <h3 class="titles white">Encuéntranos</h3>
             <p class="dashes">__</p>
@@ -450,7 +468,7 @@
             <p class="subtitles">ARTÍCULOS</p>
             <h3 class="titles">Descubre nuestro Blog</h3>
             <p class="dashes">__</p>
-            <a class="btn btn-action visit" href="#" role="button">VISITAR BLOG</a>
+            <a class="btn btn-action visit" href="https://dreysacblog.wordpress.com/" target="_blank" role="button">VISITAR BLOG</a>
           </div>
         </div>
       </div>
@@ -604,27 +622,39 @@
             <i class="far fa-envelope"></i>
             <p class="darkgrey">support@yourname.com</p>
           </div>
+
+          <!-- Contact Form 2 -->
           <div class="col-md-8 offset-md-2">
-
-            <!-- Contact Form 2 -->
             <form id="contactForm2" class="contact-form2" method="post" action="contact-form2.php" data-toggle="validator">
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <input id="name2" class="form-control" type="text" name="name" placeholder="NAME *" required>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <input id="name2" class="form-control" type="text" name="name" placeholder="NAME *" data-error="Name is required."required>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="col-md-12 form-group">
                         <input id="email2" class="form-control" type="email" name="email" placeholder="EMAIL *" required>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="col-md-12 form-group">
                         <input id="subject2" class="form-control" type="text" name="subject" placeholder="SUBJECT *">
+                      </div>
                     </div>
-
-                    <div class="col-md-6 form-group">
-                        <textarea id="message2" class="form-control" placeholder="MESSAGE *" rows="7" required></textarea>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <a class="btn btn-action" href="#" role="button">ENVIAR MENSAJE</a>
-                    </div>
+                  </div>
                 </div>
+                <div class="col-md-6 form-group">
+                  <textarea id="message2" class="form-control" placeholder="MESSAGE *" rows="9" data-error="Message is required." required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <a class="btn btn-action" href="#" role="button">ENVIAR MENSAJE</a>
+                </div>
+              </div>
             </form>
-
           </div>
+
         </div>
       </div>
     </div>
@@ -652,21 +682,21 @@
     <footer>
         <div class="container text-center">
           <div class="row social-media">
-            <div class="col-4">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
+            <div class="col-6">
+              <a href="https://www.youtube.com/channel/UC4JB71HoMqJhfpmZ3ttrWbQ?view_as=subscriber" target="_blank">
+                <i class="fab fa-youtube"></i>
               </a>
             </div>
-            <div class="col-4">
-              <a href="#">
+            <div class="col-6">
+              <a href="https://www.facebook.com/Dreysac-1529452984017143/" target="_blank">
                 <i class="fa fa-facebook"></i>
               </a>
             </div>
-            <div class="col-4">
+            <!-- <div class="col-4">
               <a href="#">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-            </div>
+            </div> -->
           </div>
           <div class="row copyright">
             <div class="col-md-12">
